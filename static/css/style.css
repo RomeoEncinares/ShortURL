@@ -1,0 +1,28 @@
+html,
+body {
+    padding:0;
+    margin:0;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.row {
+    padding: 0.6rem;
+}
+
+.card {
+    min-width: 60%;
+}
+
+.btn-primary{
+    margin-top: 15px;
+    width: 100%
+}
