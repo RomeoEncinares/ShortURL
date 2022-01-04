@@ -17,6 +17,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Enter your URL here</h5>
                     <form method="POST">
+                        {{ form.url }}
                         {% csrf_token %}
                         <input type="submit" class="btn btn-primary" value="Submit">
                     </form>
