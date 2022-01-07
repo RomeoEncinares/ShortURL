@@ -1,20 +1,20 @@
 from django.shortcuts import render
 from .forms import LinkForm
-from .models import Link
 import pyshorteners
 
 def index(request):
+    form = LinkForm(request.POST or None)
+    shorturl = ""
 
-    form = LinkForm
+    if form.is_valid():
+        url = request.POST['url']
+        shorturl = create(url)
 
     context = {
-        "form" : form, 
+        "form" : form,
+        "shorturl": shorturl,
     }
 
-    if request.method == "POST":
-        shorturl = create(request.POST['url'])
-        context["shorturl"] = shorturl
-    
     return render(request, 'index.html', context)
 
 def create(url):
