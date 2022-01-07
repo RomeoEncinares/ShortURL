@@ -26,3 +26,9 @@ body {
     margin-top: 15px;
     width: 100%
 }
+
+#shorturl {
+    background-color: white;
+    color: black;
+    height: 2.4rem;
+}
