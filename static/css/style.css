@@ -15,7 +15,8 @@ body {
 }
 
 .row {
-    padding: 0.6rem;
+    padding: 0.5rem;
+    margin: 1rem;
 }
 
 .card {

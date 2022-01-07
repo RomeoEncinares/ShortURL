@@ -21,14 +21,12 @@
                         {% csrf_token %}
                         <input type="submit" class="btn btn-primary" value="Submit">
                     </form>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card-body">
                     <h5 class="card-title">Here is the short URL</h5>
-                    <form class="form-control" placeholder="Your Short URL is" id="shorturl" readonly>{{ shorturl }}</form>
-                    <a class="btn btn-primary" type="button" > Copy to Clipboard</a>
-                </div>
+                    <form >
+                        <input class="form-control" placeholder="Your Short URL is" id="shorturl" value="{{ shorturl }}"readonly>
+                        <input class="btn btn-primary" type="button" id="clipboard" value="Copy to Clipboard"> 
+                    </form>
+                    
             </div>
         </div>
     </div>
