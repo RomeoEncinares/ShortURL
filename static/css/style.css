@@ -40,6 +40,16 @@ h2 {
     font-weight: 700;
 }
 
+.url-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content:flex-start;
+}
+
+.url-title, h5{
+    padding-left: 1rem;
+}
+
 .card-title {
     font-weight: 600;
 }
