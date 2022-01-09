@@ -4,7 +4,7 @@ from django.forms import ModelForm
 
 class LinkForm(forms.ModelForm):
 
-    url = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder' : 'Enter the url here'}))
+    url = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder' : 'Your long URL is'}))
 
     class Meta:
         model = Link
