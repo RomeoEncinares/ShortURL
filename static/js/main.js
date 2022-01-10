@@ -17,3 +17,10 @@ form.addEventListener('submit', e=>{
         cache: false, 
     })
 })
+
+const formDiv = document.getElementById("url-output")
+console.log(formDiv)
+formDiv.addEventListener("click",function(){
+    const shorturl= document.getElementById("shorturl")
+    navigator.clipboard.writeText(shorturl.value);
+});
